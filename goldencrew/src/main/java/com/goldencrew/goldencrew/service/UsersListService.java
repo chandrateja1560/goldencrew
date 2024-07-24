@@ -12,9 +12,11 @@ public class UsersListService {
     @Autowired
     UsersDao usersDao;
 
+
     public List<Users> getAllUsers(){
         return usersDao.findAll();
     }
+
     public Users getUserByUsername(String username) {
         return usersDao.findByUsername(username);
     }
