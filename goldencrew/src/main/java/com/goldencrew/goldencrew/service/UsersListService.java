@@ -18,6 +18,7 @@ public class UsersListService {
     }
 
     public Users getUserByUsername(String username) {
+        System.out.println("Hello");
         return usersDao.findByUsername(username);
     }
 }
